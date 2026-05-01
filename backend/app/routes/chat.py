@@ -26,7 +26,8 @@ async def chat(
         if not session:
             raise HTTPException(status_code=404, detail="Sesi chat tidak ditemukan")
     else:
-        session = ChatSession(user_id=current_user.id, title=request.message[:50])
+        title = request.message[:50] + ("..." if len(request.message) > 50 else "")
+        session = ChatSession(user_id=current_user.id, title=title)
         db.add(session)
         db.commit()
         db.refresh(session)

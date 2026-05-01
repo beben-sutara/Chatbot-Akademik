@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Text, DateTime, Date, ForeignKey, Float, Enum, Time
+from sqlalchemy import Column, Integer, String, Text, DateTime, Date, ForeignKey, Float, Enum, Time, Boolean
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 import enum
@@ -80,5 +80,5 @@ class FAQ(Base):
     pertanyaan = Column(Text, nullable=False)
     jawaban = Column(Text, nullable=False)
     kategori = Column(String(100))
-    is_active = Column(Integer, default=1)
+    is_active = Column(Boolean, default=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())

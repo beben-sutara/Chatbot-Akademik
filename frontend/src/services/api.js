@@ -11,7 +11,8 @@ api.interceptors.response.use(
     if (error.response?.status === 401) {
       localStorage.removeItem('token')
       localStorage.removeItem('user')
-      window.location.href = '/login'
+      // Dispatch a custom event so AuthContext can react without a hard reload
+      window.dispatchEvent(new Event('auth:unauthorized'))
     }
     return Promise.reject(error)
   }

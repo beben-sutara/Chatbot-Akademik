@@ -269,7 +269,7 @@ export default function ChatPage() {
               <div className="bg-primary-100 p-5 rounded-full mb-4">
                 <GraduationCap className="h-12 w-12 text-primary-600" />
               </div>
-              <h2 className="text-xl font-semibold text-gray-800 mb-2">Halo, {user?.full_name?.split(' ')[0]}! 👋</h2>
+              <h2 className="text-xl font-semibold text-gray-800 mb-2">Halo, {user?.full_name}! 👋</h2>
               <p className="text-gray-500 mb-6 max-w-sm">Saya Akad, asisten akademik digital Anda. Apa yang bisa saya bantu hari ini?</p>
               <div className="grid grid-cols-2 gap-3 w-full max-w-sm">
                 {QUICK_ACTIONS.map(({ icon: Icon, label, message }) => (

@@ -16,6 +16,13 @@ export function AuthProvider({ children }) {
     }
   }, [token])
 
+  // Listen for unauthorised events emitted by the API interceptor
+  useEffect(() => {
+    const handleUnauthorized = () => logout()
+    window.addEventListener('auth:unauthorized', handleUnauthorized)
+    return () => window.removeEventListener('auth:unauthorized', handleUnauthorized)
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
   const login = async (nim_nip, password) => {
     const res = await api.post('/api/v1/auth/login', { nim_nip, password })
     const { access_token, user: userData } = res.data

@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS faqs (
     pertanyaan TEXT NOT NULL,
     jawaban TEXT NOT NULL,
     kategori VARCHAR(100),
-    is_active INTEGER DEFAULT 1,
+    is_active BOOLEAN DEFAULT TRUE,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 

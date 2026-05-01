@@ -101,7 +101,7 @@ def _get_fallback_response(message: str, context: str, db: Session) -> str:
     msg_lower = message.lower()
 
     # Check FAQ
-    faqs = db.query(FAQ).filter(FAQ.is_active == 1).all()
+    faqs = db.query(FAQ).filter(FAQ.is_active == True).all()  # noqa: E712
     for faq in faqs:
         keywords = faq.pertanyaan.lower().split()
         if any(kw in msg_lower for kw in keywords if len(kw) > 3):

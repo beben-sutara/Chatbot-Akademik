@@ -51,7 +51,7 @@ def get_faqs(
     kategori: Optional[str] = Query(None),
     db: Session = Depends(get_db),
 ):
-    query = db.query(FAQ).filter(FAQ.is_active == 1)
+    query = db.query(FAQ).filter(FAQ.is_active == True)  # noqa: E712
     if kategori:
         query = query.filter(FAQ.kategori == kategori)
     return query.all()
