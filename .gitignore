@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-link
+.eggs/
+.venv/
+venv/
+env/
+.env
+*.sqlite
+*.db
+
+# Node / Frontend
+node_modules/
+dist/
+.parcel-cache/
+.cache/
+frontend/dist/
+
+# Docker
+.dockerenv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment files (keep .env.example, ignore actual .env)
+.env
+!.env.example
