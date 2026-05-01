@@ -287,7 +287,7 @@ export default function ChatPage() {
           ) : (
             <>
               {messages.map((msg, i) => (
-                <MessageBubble key={i} message={msg} />
+                <MessageBubble key={msg.id ?? i} message={msg} />
               ))}
               {loading && <TypingIndicator />}
               <div ref={messagesEndRef} />
