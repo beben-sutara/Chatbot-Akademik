@@ -7,8 +7,13 @@ class Settings(BaseSettings):
     debug: bool = True
     secret_key: str = "changeme"
 
-    # Database
+    # Database — use Supabase PostgreSQL connection URL
+    # Format: postgresql://postgres.[project-ref]:[password]@aws-0-[region].pooler.supabase.com:6543/postgres
     database_url: str = "sqlite:///./chatbot_akademik.db"
+
+    # Supabase
+    supabase_url: Optional[str] = None
+    supabase_key: Optional[str] = None
 
     # JWT
     jwt_secret_key: str = "changeme"
