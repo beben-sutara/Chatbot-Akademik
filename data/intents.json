@@ -1,0 +1,235 @@
+{
+  "intents": [
+    {
+      "tag": "salam",
+      "patterns": [
+        "halo", "hai", "hi", "selamat pagi", "selamat siang", "selamat sore",
+        "selamat malam", "hei", "helo", "assalamu'alaikum", "assalamualaikum",
+        "apa kabar", "good morning", "good afternoon", "hello"
+      ],
+      "responses": [
+        "Halo! Selamat datang di Layanan Akademik. Ada yang bisa saya bantu?",
+        "Hai! Saya siap membantu kebutuhan akademik Anda. Silakan tanyakan sesuatu.",
+        "Selamat datang! Saya adalah Asisten Akademik. Apa yang ingin Anda ketahui?"
+      ]
+    },
+    {
+      "tag": "perpisahan",
+      "patterns": [
+        "sampai jumpa", "bye", "dadah", "selamat tinggal", "terima kasih banyak",
+        "makasih banyak", "sudah cukup", "oke terima kasih", "cukup", "exit", "keluar"
+      ],
+      "responses": [
+        "Terima kasih telah menggunakan Layanan Akademik. Sampai jumpa!",
+        "Semoga hari Anda menyenangkan! Jangan ragu untuk kembali jika ada pertanyaan.",
+        "Sampai jumpa! Semoga sukses dalam studi Anda."
+      ]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": [
+        "terima kasih", "makasih", "thanks", "thank you", "thx", "tengkyu"
+      ],
+      "responses": [
+        "Sama-sama! Senang bisa membantu Anda.",
+        "Dengan senang hati! Ada hal lain yang ingin Anda tanyakan?",
+        "Terima kasih kembali! Jangan ragu untuk bertanya lagi."
+      ]
+    },
+    {
+      "tag": "pendaftaran_mahasiswa_baru",
+      "patterns": [
+        "daftar mahasiswa baru", "pendaftaran", "cara mendaftar", "registrasi",
+        "penerimaan mahasiswa baru", "pmb", "seleksi masuk", "jalur masuk",
+        "snmptn", "sbmptn", "jalur mandiri", "cara masuk kuliah", "daftar kuliah",
+        "pendaftaran online", "syarat pendaftaran"
+      ],
+      "responses": [
+        "Pendaftaran Mahasiswa Baru (PMB) dapat dilakukan melalui beberapa jalur:\n\n1. **SNBP** (Seleksi Nasional Berdasarkan Prestasi) – Jalur undangan berdasarkan nilai rapor\n2. **SNBT** (Seleksi Nasional Berdasarkan Tes) – Ujian tertulis nasional\n3. **Jalur Mandiri** – Seleksi yang diselenggarakan oleh kampus secara mandiri\n\nUntuk informasi lebih lanjut, silakan kunjungi website resmi kampus atau hubungi Bagian Admisi di (021) 555-0100."
+      ]
+    },
+    {
+      "tag": "biaya_kuliah",
+      "patterns": [
+        "biaya kuliah", "ukt", "spp", "biaya pendidikan", "biaya per semester",
+        "uang kuliah", "biaya registrasi", "cicilan ukt", "keringanan ukt",
+        "beasiswa ukt", "berapa biaya", "biaya studi"
+      ],
+      "responses": [
+        "Biaya kuliah (UKT/SPP) tergantung pada program studi dan jalur masuk yang dipilih. UKT ditetapkan berdasarkan kemampuan ekonomi orang tua.\n\nKisaran UKT per semester:\n- Golongan 1: Rp 500.000 – Rp 1.000.000\n- Golongan 2: Rp 1.000.000 – Rp 2.500.000\n- Golongan 3: Rp 2.500.000 – Rp 5.000.000\n- Golongan 4: Rp 5.000.000 – Rp 8.000.000\n\nUntuk informasi lengkap dan pengajuan keringanan UKT, silakan hubungi Bagian Keuangan atau kunjungi portal akademik."
+      ]
+    },
+    {
+      "tag": "beasiswa",
+      "patterns": [
+        "beasiswa", "bantuan biaya", "beasiswa bidikmisi", "kip kuliah", "beasiswa prestasi",
+        "beasiswa luar negeri", "beasiswa pemerintah", "beasiswa swasta", "cara dapat beasiswa",
+        "syarat beasiswa", "daftar beasiswa", "beasiswa aktif"
+      ],
+      "responses": [
+        "Kampus menyediakan berbagai program beasiswa, antara lain:\n\n1. **KIP-Kuliah** – Beasiswa pemerintah untuk mahasiswa kurang mampu berprestasi\n2. **Beasiswa Prestasi Akademik** – Untuk mahasiswa dengan IPK tinggi (≥ 3.50)\n3. **Beasiswa Penelitian** – Untuk mahasiswa yang aktif dalam riset\n4. **Beasiswa dari Mitra Industri** – Dari perusahaan mitra kampus\n5. **Beasiswa Luar Negeri** – Program pertukaran pelajar internasional\n\nInformasi dan pendaftaran beasiswa tersedia di portal akademik atau Bagian Kemahasiswaan. Hubungi: beasiswa@kampus.ac.id"
+      ]
+    },
+    {
+      "tag": "jadwal_kuliah",
+      "patterns": [
+        "jadwal kuliah", "jadwal kelas", "jadwal perkuliahan", "kelas hari ini",
+        "mata kuliah", "jam kuliah", "ruang kelas", "jadwal semester", "lihat jadwal"
+      ],
+      "responses": [
+        "Jadwal kuliah dapat dilihat melalui:\n\n1. **Portal Akademik**: Masuk ke portal.kampus.ac.id menggunakan NIM dan password Anda\n2. **Aplikasi Mobile**: Unduh aplikasi SiAkad di Play Store / App Store\n3. **Papan Pengumuman**: Tersedia di setiap gedung fakultas\n\nJika jadwal belum tampil atau ada masalah, silakan hubungi Bagian Akademik Fakultas Anda."
+      ]
+    },
+    {
+      "tag": "krs",
+      "patterns": [
+        "krs", "kartu rencana studi", "isi krs", "pengisian krs", "ambil mata kuliah",
+        "daftar mata kuliah", "pilih kelas", "input krs", "krs online", "batas krs"
+      ],
+      "responses": [
+        "Pengisian KRS (Kartu Rencana Studi) dilakukan setiap awal semester melalui portal akademik:\n\n**Langkah pengisian KRS:**\n1. Login ke portal.kampus.ac.id\n2. Pilih menu 'KRS Online'\n3. Pilih mata kuliah yang tersedia sesuai kurikulum\n4. Konsultasikan dengan Dosen Pembimbing Akademik (PA)\n5. Dosen PA menyetujui KRS secara online\n\n**Jadwal KRS:** Biasanya 1-2 minggu sebelum semester baru dimulai.\n\nPastikan pembayaran UKT sudah lunas sebelum mengisi KRS."
+      ]
+    },
+    {
+      "tag": "nilai_ipk",
+      "patterns": [
+        "nilai", "ipk", "transkrip", "lihat nilai", "hasil studi", "khs",
+        "kartu hasil studi", "nilai semester", "indeks prestasi", "ip semester"
+      ],
+      "responses": [
+        "Nilai dan IPK dapat dilihat melalui:\n\n1. **Portal Akademik** (portal.kampus.ac.id) – Menu 'Hasil Studi' atau 'KHS'\n2. **Aplikasi SiAkad Mobile** – Tersedia di Play Store / App Store\n\nTranskrip nilai resmi dapat dimohon di **Bagian Akademik** dengan membawa:\n- KTM (Kartu Tanda Mahasiswa)\n- Formulir permohonan transkrip\n- Bukti pembayaran biaya administrasi\n\nWaktu penerbitan transkrip: 3-5 hari kerja."
+      ]
+    },
+    {
+      "tag": "wisuda",
+      "patterns": [
+        "wisuda", "pendaftaran wisuda", "syarat wisuda", "kapan wisuda", "jadwal wisuda",
+        "toga wisuda", "prosesi wisuda", "lulusan", "kelulusan", "yudisium"
+      ],
+      "responses": [
+        "Informasi Wisuda:\n\n**Syarat Wisuda:**\n1. Telah menyelesaikan seluruh SKS sesuai kurikulum\n2. IPK minimal 2.00 (S1) / 3.00 (S2)\n3. Bebas tanggungan perpustakaan dan keuangan\n4. Telah mengumpulkan skripsi/tugas akhir yang sudah disahkan\n5. Mengisi formulir pendaftaran wisuda\n\n**Prosedur:**\n- Daftar wisuda melalui portal akademik\n- Ambil toga di Bagian Perlengkapan\n- Ikuti gladi bersih sehari sebelum wisuda\n\nInformasi jadwal wisuda tersedia di website kampus atau Bagian Akademik."
+      ]
+    },
+    {
+      "tag": "skripsi_ta",
+      "patterns": [
+        "skripsi", "tugas akhir", "ta", "tesis", "disertasi", "sidang", "ujian ta",
+        "seminar proposal", "proposal skripsi", "bimbingan skripsi", "dosen pembimbing"
+      ],
+      "responses": [
+        "Informasi Skripsi/Tugas Akhir:\n\n**Syarat mengambil Skripsi:**\n- Telah menempuh minimal 120 SKS (S1)\n- IPK minimal 2.00\n- Lulus mata kuliah prasyarat\n\n**Prosedur:**\n1. Ajukan judul penelitian ke Koordinator Program Studi\n2. Mendapatkan Dosen Pembimbing (SK Pembimbing)\n3. Seminar Proposal\n4. Pelaksanaan penelitian & bimbingan\n5. Seminar Hasil\n6. Sidang/Ujian Skripsi\n7. Pengumpulan laporan final\n\nUntuk konsultasi lebih lanjut, temui Koordinator Program Studi Anda."
+      ]
+    },
+    {
+      "tag": "perpustakaan",
+      "patterns": [
+        "perpustakaan", "pustaka", "pinjam buku", "koleksi buku", "e-library",
+        "database jurnal", "jurnal ilmiah", "buku digital", "repositori", "jam perpustakaan"
+      ],
+      "responses": [
+        "Layanan Perpustakaan:\n\n**Jam Operasional:**\n- Senin – Jumat: 08.00 – 20.00 WIB\n- Sabtu: 09.00 – 15.00 WIB\n- Minggu & Hari Libur: Tutup\n\n**Layanan yang tersedia:**\n1. Peminjaman & pengembalian buku\n2. Akses e-Library & database jurnal internasional (Scopus, IEEE, Springer)\n3. Ruang baca dan diskusi\n4. Layanan karya ilmiah & repositori institusi\n\n**Akses Online:** lib.kampus.ac.id\n\nKartu perpustakaan terintegrasi dengan KTM."
+      ]
+    },
+    {
+      "tag": "kalender_akademik",
+      "patterns": [
+        "kalender akademik", "jadwal akademik", "libur semester", "awal semester",
+        "akhir semester", "uts", "uas", "ujian tengah semester", "ujian akhir semester",
+        "libur kuliah", "tanggal penting", "semester ganjil", "semester genap"
+      ],
+      "responses": [
+        "Kalender Akademik Tahun Ajaran 2025/2026:\n\n**Semester Ganjil (Agustus – Januari):**\n- Pendaftaran & KRS: Juli\n- Awal Kuliah: Agustus\n- UTS: Oktober\n- Akhir Kuliah: Desember\n- UAS: Desember – Januari\n\n**Semester Genap (Februari – Juli):**\n- Pendaftaran & KRS: Januari\n- Awal Kuliah: Februari\n- UTS: April\n- Akhir Kuliah: Juni\n- UAS: Juni – Juli\n\nKalender akademik lengkap tersedia di website resmi kampus."
+      ]
+    },
+    {
+      "tag": "fasilitas",
+      "patterns": [
+        "fasilitas", "fasilitas kampus", "lab", "laboratorium", "wifi", "kantin",
+        "asrama", "kos", "olahraga", "gym", "masjid", "klinik", "kesehatan",
+        "parkir", "atm", "gedung", "ruang belajar"
+      ],
+      "responses": [
+        "Fasilitas Kampus:\n\n🏫 **Akademik:**\n- 15 Laboratorium komputer dan sains\n- Perpustakaan modern dengan akses 24 jam (online)\n- Ruang seminar dan aula\n\n🏥 **Kesehatan & Keamanan:**\n- Klinik kesehatan mahasiswa (gratis untuk mahasiswa aktif)\n- Pos keamanan 24 jam\n\n🍽️ **Pendukung:**\n- Kantin dan foodcourt\n- ATM Center\n- Masjid dan mushola\n- Lapangan olahraga (futsal, basket, voli)\n\n🌐 **Teknologi:**\n- WiFi di seluruh area kampus\n- Portal akademik & aplikasi mobile"
+      ]
+    },
+    {
+      "tag": "kontak",
+      "patterns": [
+        "kontak", "nomor telepon", "email", "alamat kampus", "hubungi", "customer service",
+        "call center", "whatsapp", "media sosial", "instagram", "website"
+      ],
+      "responses": [
+        "Kontak Layanan Akademik:\n\n📞 **Telepon:** (021) 555-0100\n📱 **WhatsApp:** 0812-3456-7890\n📧 **Email:** akademik@kampus.ac.id\n🌐 **Website:** www.kampus.ac.id\n\n**Jam Layanan:**\nSenin – Jumat: 08.00 – 16.00 WIB\n\n**Media Sosial:**\n- Instagram: @kampus_akademik\n- Twitter/X: @kampusresmi\n\n**Alamat:**\nJl. Pendidikan No. 1, Jakarta Selatan 12345"
+      ]
+    },
+    {
+      "tag": "program_studi",
+      "patterns": [
+        "program studi", "prodi", "jurusan", "fakultas", "s1", "s2", "s3",
+        "diploma", "d3", "d4", "pilih jurusan", "daftar jurusan", "ada jurusan apa"
+      ],
+      "responses": [
+        "Program Studi yang Tersedia:\n\n🖥️ **Fakultas Teknik & Informatika:**\n- Teknik Informatika (S1)\n- Sistem Informasi (S1)\n- Teknik Elektro (S1)\n- Teknik Sipil (S1)\n\n📊 **Fakultas Ekonomi & Bisnis:**\n- Manajemen (S1)\n- Akuntansi (S1)\n- Ekonomi Pembangunan (S1)\n\n⚕️ **Fakultas Kesehatan:**\n- Kesehatan Masyarakat (S1)\n- Farmasi (S1)\n\n🎓 **Program Pascasarjana:**\n- Magister Manajemen (S2)\n- Magister Teknik Informatika (S2)\n\nInfo akreditasi dan kurikulum: www.kampus.ac.id/prodi"
+      ]
+    },
+    {
+      "tag": "pkl_magang",
+      "patterns": [
+        "pkl", "magang", "kerja praktik", "kp", "internship", "praktik kerja lapangan",
+        "magang industri", "lowongan magang", "syarat pkl", "prosedur magang"
+      ],
+      "responses": [
+        "Informasi PKL/Magang:\n\n**Syarat PKL:**\n- Telah menempuh minimal 100 SKS\n- IPK minimal 2.50\n- Mendapat persetujuan Dosen PA\n\n**Prosedur:**\n1. Ajukan permohonan ke Koordinator Prodi\n2. Dapatkan surat pengantar dari kampus\n3. Ajukan ke perusahaan/instansi tujuan\n4. Laksanakan PKL minimal 1-3 bulan\n5. Buat laporan dan presentasi hasil PKL\n\n**Informasi Lowongan Magang:**\nCek portal karir kampus: karir.kampus.ac.id\nAtau hubungi Pusat Karir: karir@kampus.ac.id"
+      ]
+    },
+    {
+      "tag": "organisasi_mahasiswa",
+      "patterns": [
+        "organisasi", "ukm", "bem", "himpunan", "ormawa", "kegiatan mahasiswa",
+        "ekstrakurikuler", "klub", "komunitas", "kegiatan kampus", "daftar ukm"
+      ],
+      "responses": [
+        "Organisasi & Kegiatan Mahasiswa:\n\n🏛️ **Lembaga Kemahasiswaan:**\n- BEM (Badan Eksekutif Mahasiswa) Universitas\n- DPM (Dewan Perwakilan Mahasiswa)\n- Himpunan Mahasiswa per Program Studi\n\n🎭 **Unit Kegiatan Mahasiswa (UKM):**\n- UKM Seni & Budaya (tari, musik, teater)\n- UKM Olahraga (futsal, basket, bela diri)\n- UKM Ilmiah & Penelitian\n- UKM Kerohanian\n- UKM Kewirausahaan\n- UKM Pers Mahasiswa\n\nDaftar UKM lengkap dan cara bergabung: ormawa.kampus.ac.id"
+      ]
+    },
+    {
+      "tag": "cuti_akademik",
+      "patterns": [
+        "cuti kuliah", "cuti akademik", "stop out", "berhenti sementara", "istirahat kuliah",
+        "syarat cuti", "prosedur cuti", "perpanjang cuti"
+      ],
+      "responses": [
+        "Informasi Cuti Akademik:\n\n**Ketentuan:**\n- Maksimal cuti 2 semester (tidak berturut-turut)\n- Total masa studi termasuk cuti: maksimal 14 semester (S1)\n- Tidak diwajibkan membayar UKT penuh (hanya biaya administrasi cuti)\n\n**Syarat:**\n- Mahasiswa aktif minimal 2 semester\n- Tidak sedang dalam masa sanksi akademik\n\n**Prosedur:**\n1. Ambil formulir cuti di Bagian Akademik\n2. Isi dan minta tanda tangan Dosen PA & Kaprodi\n3. Serahkan ke Bagian Akademik sebelum batas waktu\n\nInformasi lebih lanjut: Bagian Akademik Fakultas"
+      ]
+    },
+    {
+      "tag": "transfer_mahasiswa",
+      "patterns": [
+        "pindah kuliah", "transfer kredit", "alih program", "pindah prodi", "pindah universitas",
+        "mahasiswa pindahan", "transfer mahasiswa", "konversi mata kuliah"
+      ],
+      "responses": [
+        "Informasi Transfer/Pindah Mahasiswa:\n\n**Transfer dari Kampus Lain:**\n- Dibuka setiap awal tahun akademik\n- Syarat: IPK minimal 2.75 di perguruan tinggi asal\n- Akreditasi PT asal minimal B\n- Maksimal berada di semester 6\n\n**Pindah Program Studi (Internal):**\n- Diizinkan setelah menempuh 2 semester\n- IPK minimal 2.50\n- Kuota terbatas per prodi tujuan\n\nKonversi/transfer kredit dinilai oleh Tim Akademik Program Studi.\nKonsultasikan dengan Bagian Akademik untuk proses lebih lanjut."
+      ]
+    },
+    {
+      "tag": "bantuan_umum",
+      "patterns": [
+        "bantuan", "bisa bantu apa", "layanan apa saja", "apa saja yang bisa ditanyakan",
+        "menu", "informasi apa", "tanya apa", "help", "fitur"
+      ],
+      "responses": [
+        "Saya dapat membantu Anda dengan informasi seputar:\n\n📋 **Pendaftaran & Penerimaan**\n💰 **Biaya Kuliah & Beasiswa**\n📅 **Jadwal Kuliah & Kalender Akademik**\n📝 **KRS & Nilai/IPK**\n🎓 **Wisuda & Skripsi/Tugas Akhir**\n📚 **Perpustakaan & Fasilitas**\n🏢 **Program Studi & Fakultas**\n💼 **PKL/Magang**\n🏛️ **Organisasi Mahasiswa**\n📞 **Kontak & Informasi Kampus**\n\nSilakan ketik pertanyaan Anda atau pilih topik di atas!"
+      ]
+    },
+    {
+      "tag": "tidak_dipahami",
+      "patterns": [],
+      "responses": [
+        "Maaf, saya belum memahami pertanyaan Anda. Bisa diulangi dengan kalimat yang berbeda?\n\nAtau ketik **'bantuan'** untuk melihat daftar topik yang bisa saya bantu.",
+        "Hmm, saya kurang mengerti maksud Anda. Coba tanyakan dengan cara lain, atau ketik **'bantuan'** untuk panduan.",
+        "Pertanyaan Anda belum bisa saya pahami. Silakan ketik **'bantuan'** untuk melihat layanan yang tersedia."
+      ]
+    }
+  ]
+}
