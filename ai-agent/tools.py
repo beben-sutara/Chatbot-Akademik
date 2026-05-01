@@ -1,7 +1,7 @@
 """
 LangChain Tools untuk Chatbot Akademik
 """
-from langchain.tools import tool
+from langchain_core.tools import tool
 from typing import Optional
 
 

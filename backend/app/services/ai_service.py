@@ -73,7 +73,7 @@ def _build_context(message: str, user: User, db: Session) -> str:
 async def _get_openai_response(message: str, history: List[ChatMessage], context: str) -> str:
     try:
         from langchain_openai import ChatOpenAI
-        from langchain.schema import SystemMessage, HumanMessage, AIMessage
+        from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
         llm = ChatOpenAI(
             model=settings.openai_model,

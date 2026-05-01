@@ -33,8 +33,8 @@ def create_agent(tools: List = None):
 
     from langchain_openai import ChatOpenAI
     from langchain.agents import AgentExecutor, create_openai_tools_agent
-    from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
-    from langchain.schema import SystemMessage
+    from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+    from langchain_core.messages import SystemMessage
 
     llm = ChatOpenAI(model=OPENAI_MODEL, openai_api_key=OPENAI_API_KEY, temperature=0.7)
     tools = tools or []
@@ -56,7 +56,7 @@ def get_simple_response(message: str, history: List[Dict[str, str]] = None) -> s
         return "OpenAI API key tidak dikonfigurasi. Silakan atur OPENAI_API_KEY."
 
     from langchain_openai import ChatOpenAI
-    from langchain.schema import SystemMessage, HumanMessage, AIMessage
+    from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
     llm = ChatOpenAI(model=OPENAI_MODEL, openai_api_key=OPENAI_API_KEY, temperature=0.7)
     messages = [SystemMessage(content=SYSTEM_PROMPT)]
